@@ -11,9 +11,9 @@ function PageA() {
   return (
     <div className="App">
       <div>pageA</div>
-      <div>value:{state.count}</div>
+      <div>value:{state.count || 0}</div>
       <button onClick={() => dispatch(addNumber)}> addNumber</button>
-      <button onClick={() => reduceNumber(dispatch) }> 异步 reduceNumber</button>
+      <button onClick={() => reduceNumber(dispatch) }>reduceNumber</button>
     </div>
   );
 }

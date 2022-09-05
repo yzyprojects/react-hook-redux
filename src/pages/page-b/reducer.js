@@ -17,6 +17,7 @@ const reduceNumberB =  function (state = defaultState, action) {
 
 reducerMap.set('addNumberB', addNumberB);
 reducerMap.set('reduceNumberB', reduceNumberB);
+
 export const reducer = (state = defaultState , action)=>{
     const newState = reducerMap.get(action.type || '')
     if (newState) {

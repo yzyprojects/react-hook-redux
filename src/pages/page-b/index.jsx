@@ -12,7 +12,7 @@ function PageB() {
       <div>pageB</div>
       <div>value:{state.count}</div>
       <button onClick={() => dispatch(addNumberB)}> addNumberB</button>
-      <button onClick={() => dispatch(reduceNumberB) }> reduceNumberB</button>
+      <button onClick={() => dispatch(reduceNumberB) }> 异步 reduceNumberB</button>
     </div>
   );
 }

@@ -1,3 +1,5 @@
 import { pathName } from './pathName'
-// 返回当前页面模块的store
-export const pageState = (state) => state[`${pathName}reducer`]
+// 默认页面地址
+const defaultPathName = 'page-a';
+// 根据页面地址获取对应的store
+export const pageState = (state, defaultPagePath) => state[`${pathName || defaultPathName}reducer`]

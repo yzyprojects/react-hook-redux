@@ -4,8 +4,4 @@ export const addNumber = {
     value: 100
 }
 
-export const reduceNumber = (dispatch) => {
-    setTimeout(function () {
-        dispatch({type: reduceNumberType, value: 1000 })
-    }, 5000)
-}
+export const reduceNumber = (dispatch) =>   dispatch({type: reduceNumberType, value: 100 })
