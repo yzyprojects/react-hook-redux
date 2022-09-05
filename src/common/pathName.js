@@ -1,0 +1,1 @@
+export const pathName = document.location.pathname.replace('/', '')
